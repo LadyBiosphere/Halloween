@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Creatures</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This website was created for an introductory web design course at Yoobee School of Design. I created this to help students understand how to put a simple website together.">
+		<meta name="author" content="Nishita Wojnar">
+		
+		<!-- Your main CSS stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+		<!-- Default mobile-optimised view -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Optional: Third party stuff, e.g. Font Awesome, Google Fonts, Bootstrap etc. -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i|Old+Standard+TT:400,400i,700" rel="stylesheet">
+	</head>
+	<body>
+		<!-- This DIV is for containing ALL of your mark up -->
+		<div id="container">
+
+			<!-- This DIV is going to contain a BIG background image -->
+			<div id="gallery-banner">
+			
+				<!-- This DIV is going to contain the navigation menu -->
+				<div id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li id="active-link"><a href="creatures.html">Creatures</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+
+				<!-- This DIV is going to contain an "intro message" -->
+				<div id="intro">
+					<img src="http://www.newsmanity.com/resources/Photos_Website/MOON.png">
+					<h2><strong>Under the moonlight</strong></h2>
+					<p>You see a sight that almost stops your heart.</p>
+					<a href="#creatures" class="button">See creatures</a>
+				</div>
+
+				<!-- This is simply a 'section' for breaking up content -->
+				<div class="section" id="creatures">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+				</div>
+				<div class="section">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+				</div>
+				<div class="section">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+					<img src="../images/placeholder.png">
+				</div>
+			</div>
+
+			<!-- This DIV is going to contain a footer -->
+			<div id="footer">
+				<p>&copy; Nishita Wojnar, <span id="date"></span>.</p>
+			</div>
+
+		</div>
+
+		<!-- Generate current year -->
+		<script type="text/javascript">
+		    document.getElementById("date").innerHTML = new Date().getFullYear();
+		</script>
+	</body>
+</html>

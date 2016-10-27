@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sample website</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This website was created for an introductory web design course at Yoobee School of Design. I created this to help students understand how to put a simple website together.">
+		<meta name="author" content="Nishita Wojnar">
+		
+		<!-- Your main CSS stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Default mobile-optimised view -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Optional: Third party stuff, e.g. Font Awesome, Google Fonts, Bootstrap etc. -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i|Old+Standard+TT:400,400i,700" rel="stylesheet">
+	</head>
+	<body>
+		<!-- This DIV is for containing ALL of your mark up -->
+		<div id="container">
+
+			<!-- This DIV is going to contain a BIG background image -->
+			<div id="banner">
+			
+				<!-- This DIV is going to contain the navigation menu -->
+				<div id="nav">
+					<ul>
+						<li id="active-link"><a href="index.html">Home</a></li>
+						<li><a href="pages/creatures.html">Creatures</a></li>
+						<li><a href="pages/about.html">About</a></li>
+					</ul>
+				</div>
+
+				<!-- This DIV is going to contain a "banner message" -->
+				<div id="main-message">
+					<h1><strong>It&rsquo;s close to midnight</strong></h1>
+					<p class="sub-text">Something evil&rsquo;s lurking in the dark.</p>
+					<a href="pages/creatures.html" class="button">Take a look</a>
+				</div>
+
+			</div>
+
+			<!-- This DIV is going to contain a footer -->
+			<div id="footer">
+				<p>&copy; Nishita Wojnar, <span id="date"></span>.</p>
+			</div>
+
+		</div>
+
+		<!-- Generate current year -->
+		<script type="text/javascript">
+		    document.getElementById("date").innerHTML = new Date().getFullYear();
+		</script>
+	</body>
+</html>

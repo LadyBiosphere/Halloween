@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This website was created for an introductory web design course at Yoobee School of Design. I created this to help students understand how to put a simple website together.">
+		<meta name="author" content="Nishita Wojnar">
+		
+		<!-- Your main CSS stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+		<!-- Default mobile-optimised view -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Optional: Third party stuff, e.g. Font Awesome, Google Fonts, Bootstrap etc. -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i|Old+Standard+TT:400,400i,700" rel="stylesheet">
+	</head>
+	<body>
+		<!-- This DIV is for containing ALL of your mark up -->
+		<div id="container">
+
+			<!-- This DIV is going to contain a BIG background image -->
+			<div id="gallery-banner">
+			
+				<!-- This DIV is going to contain the navigation menu -->
+				<div id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="creatures.html">Creatures</a></li>
+						<li id="active-link"><a href="about.html">About</a></li>
+					</ul>
+				</div>
+
+				<!-- This DIV is going to contain an "intro message" -->
+				<div id="intro">
+					<img src="../images/logo.png">
+					<h2><strong>What is this?</strong></h2>
+					<p>This is an exercise I made for my introductory web design class.</p>
+					<a href="#disclaimer" class="button">Read the disclaimer</a>
+				</div>
+
+				<!-- This is simply a 'section' for breaking up content -->
+				<div class="section" id="disclaimer">
+					<div class="img-block">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7129.645226623853!2d174.7775795860349!3d-41.29479616794652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afdacd02e46d%3A0x41a5eb0416607a6d!2sYoobee+School+of+Design+-+Design+School+Wellington!5e0!3m2!1sen!2snz!4v1477524687800" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="article">
+						<h3>Disclaimer</h3>
+						<p>October 2016: I taught an introductory web design class. In this class, my students learned about HTML5 and CSS3 - the building blocks of current web design and development. Assuming no knowledge, I taught my students the basics and offered opportunities to apply their learning.</p>
+						<p>I created many exercises for my students, including this one. This exercise was the final test of learning and it allowed students to see how the building blocks could be arranged to create a final, consumable product - a simple website. Because it was approaching halloween, I settled on a fun (but silly) website design that was inspired by Michael Jackson&rsquo;s &lsquo;<a href="https://youtu.be/4V90AmXnguw" target="_blank" title="This music video will open in YouTube.">Thriller</a>&rsquo;.</p>
+						<iframe src='http://gifs.com/embed/thriller-O7JYKN' frameborder='0' scrolling='no' width='100%' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+						<p>For the purposes of this classroom exercise, I obtained a few assets through a simple Google search. In no shape or form do I profit from the photos that I have used here. And with that, I do not claim them as my own. I would like to thank the original owners for their fantastic content and work; my students thoroughly enjoyed working with these as creative assets.</p>
+						<p>Happy halloween!</p>
+						<small>Credits: Excerpts from Thriller (Michael Jackson), Placeholder images from Dummyimages, Gif creation through gifs.com.</small>
+					</div>
+				</div>
+			</div>
+
+			<!-- This DIV is going to contain a footer -->
+			<div id="footer">
+				<p>&copy; Nishita Wojnar, <span id="date"></span>.</p>
+			</div>
+
+		</div>
+
+		<!-- Generate current year -->
+		<script type="text/javascript">
+		    document.getElementById("date").innerHTML = new Date().getFullYear();
+		</script>
+	</body>
+</html>
